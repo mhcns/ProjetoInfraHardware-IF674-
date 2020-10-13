@@ -1,0 +1,101 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 23:22:10  May 06, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Projeto_Hard_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY arquitetura
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:22:10  MAY 06, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
+set_global_assignment -name LL_ROOT_REGION ON -entity Projeto_Hard -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity Projeto_Hard -section_id "Root Region"
+set_global_assignment -name LL_ROOT_REGION ON -entity Store -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity Store -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name MISC_FILE "C:/Users/Milton/Documents/Infra Hardware/implementacao/repositorio/if674_HARDWARE/Projeto/Projeto_Hard.dpf"
+set_global_assignment -name MIF_FILE memoria.mif
+set_global_assignment -name MIF_FILE Desvio.mif
+set_global_assignment -name MIF_FILE aritimeticas.mif
+set_global_assignment -name MIF_FILE instrucoes.mif
+set_global_assignment -name VERILOG_FILE Store.v
+set_global_assignment -name VERILOG_FILE Load.v
+set_global_assignment -name VERILOG_FILE MuxALUSourceA.v
+set_global_assignment -name VERILOG_FILE MuxALUSourceB.v
+set_global_assignment -name VERILOG_FILE MuxIorD.v
+set_global_assignment -name VERILOG_FILE MuxIorE.v
+set_global_assignment -name VERILOG_FILE MuxJumpCond.v
+set_global_assignment -name VERILOG_FILE MuxMemToReg.v
+set_global_assignment -name VERILOG_FILE MuxPCSource.v
+set_global_assignment -name VERILOG_FILE MuxRegDst.v
+set_global_assignment -name VERILOG_FILE MuxSelEntDesl.v
+set_global_assignment -name VERILOG_FILE MuxSelError.v
+set_global_assignment -name VERILOG_FILE MuxSelHi.v
+set_global_assignment -name VERILOG_FILE MuxSelLo.v
+set_global_assignment -name VERILOG_FILE MuxSelShift.v
+set_global_assignment -name VERILOG_FILE Controle.v
+set_global_assignment -name VHDL_FILE Banco_reg.vhd
+set_global_assignment -name VHDL_FILE Instr_Reg.vhd
+set_global_assignment -name VHDL_FILE Memoria.vhd
+set_global_assignment -name VHDL_FILE RegDesloc.vhd
+set_global_assignment -name VHDL_FILE Registrador.vhd
+set_global_assignment -name VHDL_FILE ula32.vhd
+set_global_assignment -name VERILOG_FILE InstructionJump.v
+set_global_assignment -name BDF_FILE arquitetura.bdf
+set_global_assignment -name VERILOG_FILE SignExtend_1to32.v
+set_global_assignment -name VERILOG_FILE SignExtend_16to32.v
+set_global_assignment -name VERILOG_FILE ShiftLeft2.v
+set_global_assignment -name VERILOG_FILE Mult.v
+set_global_assignment -name VERILOG_FILE Div.v
+set_global_assignment -name VERILOG_FILE ShiftLeft2C.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE testeArquitetura.vwf
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste2.vwf
+set_global_assignment -name VERILOG_FILE UnsignExtend_16_to32.v
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name END_TIME "20 us"
+set_global_assignment -name VECTOR_WAVEFORM_FILE apresentacaco.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE agoravai.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE agoravai.vwf
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,21 @@
+module MuxJumpCond (JumpCond, ET, NotEquals, LE, GT, MuxOut);
+
+input [1:0] JumpCond;
+input [31:0] ET;
+input [31:0] NotEquals;
+input [31:0] LE;
+input [31:0] GT;
+output reg [31:0] MuxOut;
+
+always @(JumpCond)
+begin
+
+case(JumpCond)
+2'd0: MuxOut <= ET;
+2'd1: MuxOut <= NotEquals;
+2'd2: MuxOut <= LE;
+2'd3: MuxOut <= GT;
+endcase
+
+end
+endmodule
